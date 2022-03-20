@@ -10,7 +10,33 @@
 </head>
 
 <body>
-
+    <div class="form">
+        <h2>Генератор паролів</h2>
+    </div>
+    <div class="option">
+        <div class="result"></div>
+    </div>
+    <div class="option">
+        <label for="">Довжина пароля</label>
+        <input type="number" id="length" min="4" max="25" value="16">
+    </div>
+    <div class="option">
+        <label for="">Маленькі букви</label>
+        <input type="checkbox" id="lowercase" checked>
+    </div>
+    <div class="option">
+        <label for="">Великі букви</label>
+        <input type="checkbox" id="uppercase" checked>
+    </div>
+    <div class="option">
+        <label for="">Символи</label>
+        <input type="checkbox" id="symbols" checked>
+    </div>
+    <div class="option">
+        <label for="">Цифри</label>
+        <input type="checkbox" id="numbers" checked>
+    </div>
+    <button id="generate" onclick="generate()">Згенерувати пароль</button>
 
     <script src="script.js"></script>
 </body>
